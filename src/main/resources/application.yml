@@ -1,0 +1,17 @@
+server:
+  port: 7084
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    preferIpAddress: true
+spring:
+  profiles:
+    active: dev
+  application:
+    name: ORDER-SERVICE
+  data:
+    mongodb:
+      repositories: 
+        enabled: true
